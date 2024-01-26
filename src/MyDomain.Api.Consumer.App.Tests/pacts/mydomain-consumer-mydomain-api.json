@@ -1,0 +1,35 @@
+{
+  "consumer": {
+    "name": "mydomain-consumer"
+  },
+  "interactions": [
+    {
+      "description": "a request to get health check status",
+      "request": {
+        "method": "GET",
+        "path": "/v1/healthcheck"
+      },
+      "response": {
+        "body": {
+          "status": "Healthy"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pactRust": {
+      "ffi": "0.4.0",
+      "models": "1.0.4"
+    },
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  },
+  "provider": {
+    "name": "mydomain-api"
+  }
+}

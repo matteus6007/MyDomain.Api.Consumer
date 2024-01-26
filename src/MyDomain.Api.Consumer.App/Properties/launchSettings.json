@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MyDomain.Api.Consumer.App": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "PROVIDER_URL": "http://localhost:1001/"
+      }
+    }
+  }
+}
