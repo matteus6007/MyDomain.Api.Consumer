@@ -28,4 +28,4 @@ Publish consumer `Pact`:
 docker run --rm -v ${pwd}:/api -w /api pactfoundation/pact-cli publish src/MyDomain.Api.Consumer.App.Tests/pacts --broker-base-url <PACT_BROKER_BASE_URL> --broker-token <PACT_BROKER_TOKEN> --consumer-app-version "1.0.0" --branch <BRANCH>
 ```
 
-Current consumer version `1.0.1`.
+Current consumer version `1.0.2`.

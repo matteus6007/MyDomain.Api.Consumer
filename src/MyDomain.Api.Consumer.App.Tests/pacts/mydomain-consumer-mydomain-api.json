@@ -18,6 +18,39 @@
         },
         "status": 200
       }
+    },
+    {
+      "description": "get mydomain with no auth token",
+      "request": {
+        "method": "GET",
+        "path": "/v1/mydomains/fd034200-f1bf-4366-948a-af8b1ef39caa"
+      },
+      "response": {
+        "status": 401
+      }
+    },
+    {
+      "description": "get mydomain with valid auth token",
+      "request": {
+        "headers": {
+          "Authorization": "Bearer Authorized"
+        },
+        "method": "GET",
+        "path": "/v1/mydomains/7f7fe086-6e1c-41ce-8146-c3cd86a2248f"
+      },
+      "response": {
+        "body": {
+          "createdOn": "2022-05-22T00:49:00.955357",
+          "description": "Description105236a3-932c-440b-a04a-fb555a67cfa7",
+          "id": "7f7fe086-6e1c-41ce-8146-c3cd86a2248f",
+          "name": "Name46b6ae47-4bf5-45fd-b224-76f26b93f905",
+          "updatedOn": "2023-11-15T04:58:07.4829878"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      }
     }
   ],
   "metadata": {
